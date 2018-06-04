@@ -3,13 +3,14 @@
 /* global AFRAME, THREE, Promise */
 
 /**
- * Backface text. Shows text in the correct direction from both front and back page
+ * Outline text. Draw text surrounded by an outline to improve readability.
  * Build from https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_text_shapes.html
  **/
 AFRAME.registerComponent('outline-text', {
 	schema: {
 		value: { type: 'string', default: '' },
 		color: { type: 'string', default: '#000' },
+		outlineColor: { type: 'string', default: '#FFF' },
 		font: { type: 'string', default: 'helvetiker_regular' },
 		align: { type: 'string', default: 'left' },
 		opacity: { type: 'number', default: 1 },
@@ -179,7 +180,7 @@ AFRAME.registerComponent('outline-text', {
   **/
 	getLineMesh: function getLineMesh(shapes, geometry, data) {
 		var lineMaterial = new THREE.LineBasicMaterial({
-			color: data.color,
+			color: data.outlineColor,
 			side: data.side
 		});
 
