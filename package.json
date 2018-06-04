@@ -1,0 +1,24 @@
+{
+  "name": "aframe-outline-text-component",
+  "version": "1.0.0",
+  "description": "Text component for aframe js with an outline for readibility",
+  "main": "dist/outline-text.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IMPS-CDU/aframe-outline-text-component.git"
+  },
+  "keywords": [
+    "aframe",
+    "text",
+    "outline"
+  ],
+  "author": "Matt Elvey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IMPS-CDU/aframe-outline-text-component/issues"
+  },
+  "homepage": "https://github.com/IMPS-CDU/aframe-outline-text-component#readme"
+}
